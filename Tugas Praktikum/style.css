@@ -1,0 +1,71 @@
+body {
+	/*memberi background*/
+	background-image: url(http://igracias.ittelkom-pwt.ac.id/environment/ittp/images/background.jpg);
+}
+
+h1 {
+	text-align: center;			/*membuat teks rata tengah*/
+	font-family: helvetica; 	/*menentukan jenis font*/
+	font-size: 40px;			/*menentukan ukuran font*/
+	text-decoration: underline;	/*menentukan dekorasi teks*/
+}
+
+.logo {
+	position: absolute;			/*posisi absolut*/
+	right: 0;					/*letak dari kanan*/
+	top: 0;						/*letak dari atas*/
+	width: 10%;					/*menentukan lebar*/
+	height: 20%;				/*menentukan tinggi*/
+}
+
+.logose {
+	float: right;				/*membuat gambar float ke kanan*/
+	opacity: 0.2;				/*menentukan opasitas gambar*/
+	display: block;				/*menampilkan gambarnya*/
+}
+
+.this {
+	font-family:sans-serif;
+	background-color: #F8F8F8;	/*memberi warna pada background*/
+	border: solid 3px #C0504D;	/*memberi border pada kelas*/
+	width: 840px;				/*menentukan lebar kelas*/
+	padding: 0px 10px;			/*memberi padding dalam kelas*/
+	margin: 10px 0px 0px 80px;	/*memberi margin diluar kelas*/
+}
+
+.the {
+	margin-top: 20px;
+	line-height: 30px;			/*memberi jarak antar paragraf*/
+	font-weight: 600;			/*menentukan ketebalan font*/
+}
+
+.that {
+	margin-top: 20px;
+	margin-left: 20px
+}
+
+.that span{
+	font-family: math;
+	font-size: 35px;
+	color: #2F3131;				/*menentukan warna font*/
+	background-color: #E7F0F4;
+	padding: 15px 10px 25px 10px;
+}
+
+.mt50 {
+	margin-top: 50px
+}
+
+.mb15 {
+	margin-bottom: 15px
+}
+
+.retalic {
+	color: #C40201;
+	font-style: italic;			/*menentukan style pada font*/
+}
+
+ul li {
+	/*menentukan style bullet list nya*/
+	list-style: square inside url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be0ce951-ef1b-4edc-bcd7-eeb6eb51f4b8/d8m3yhd-e0ad069c-6bea-48d2-819b-5236178856db.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmUwY2U5NTEtZWYxYi00ZWRjLWJjZDctZWViNmViNTFmNGI4XC9kOG0zeWhkLWUwYWQwNjljLTZiZWEtNDhkMi04MTliLTUyMzYxNzg4NTZkYi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.XHpQwJ5DnABfPdaaOL_44WF-t3zK6OGRRFklvU5movg");
+}
