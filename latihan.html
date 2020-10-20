@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- <meta HTTP-EQUIV="REFRESH" content="0.1"> -->
+		<title>Form</title> <!-- <membuat judul laman pada tab> -->
+	</head>
+	<body>
+		<h1>Form &copy;</h1> <!-- <membuat label dengan symbol copyright> -->
+		<form action="" method="POST" enctype="multipart/form-data">
+			<label for="name">Name :</label> <!-- <membuat label Name> -->
+			<input type="text" name="name"> <!-- <lineedit inputan bertype text, input bernama 'name'> -->
+			<br>
+			<label for="gender">Gender :</label> <!-- <membuat label Gender> -->
+			<input type="radio" name="gender">Man  <!-- <membuat radiobutton, bertipe radio, input bernama gender, dan label Man> -->
+			<input type="radio" name="gender">Woman <!-- <membuat radiobutton, bertipe radio, input bernama gender, dan label Woman> -->
+			<br>
+			<label for="address">Address</label> <!-- <membuat label Address> -->
+			<input type="text" name="address"> <!-- <lineedit inputan bertype text, input bernama 'address'> -->
+			<br>
+			<label for="country">Country</label> <!-- <membuat label Country> -->
+			<select name="country"> <!-- <membuat dropdown dengan nama country> -->
+				<option value="Indonesia">Indonesia</option> <!-- <opsi dengan value Indonesia, dan text Indonesia> -->
+				<option value="Inggris">Inggris</option> <!-- <opsi dengan value Inggris, dan text Inggris> -->
+				<option value="Perancis">Perancis</option> <!-- <opsi dengan value Perancis, dan text Perancis> -->
+			</select> <!-- <menutup dropdown> -->
+			<br>
+			<label for="email">Email</label> <!-- <membuat label Email> -->
+			<input type="email" name="email"> <!-- <lineedit inputan bertype email, input bernama 'email'> -->
+			<br>
+			<label for="photo">Photo</label> <!-- <membuat label Photo> -->
+			<input type="file" name="photo"> <!-- <membuat tombol untuk inputan file> -->
+			<br>
+			<label for="comment">Comment</label> <!-- <membuat label Comment> -->
+			<textarea name="comment"></textarea> <!-- <membuat textarea dengan nama comment> -->
+			
+			<button type="submit">Submit</button> <!-- <membuat button bertype submit dan nama inputan Submit> -->
+		</form>
+	</body>
+</html>
+	
