@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--judul laman web-->
+		<title>Hello World</title>
+	</head>
+	<body></body>
+	<!--load file javascript-->
+	<script src="script.js"></script>
+	<script>
+		//deklarasi variabel variabel
+		let pesan = "ini pesan";
+		alert(pesan);
+		let bil1 = 5;
+		let bil2 = 6;
+		console.log(bil1 * bil2);
+		let a = 5;
+		a += 1;
+		alert(a);	//menampilkan alert berisi nilai variabel a
+		let umur = 20;
+		if (umur >= 17) {	//jika variabel umur bernilai lebih dari sama dengan 17, maka akan mengeksekusi statemen di dalamnya
+		  console.log("Dewasa");	//statement yang akan dieksekusi jika nilai if adalah 'true'
+		} else {
+		  console.log("Bukan Dewasa");	//statement yang akan dieksekusi jika nilai if adalah 'false'
+		}
+		let x = 95;		//deklarasi variabel x
+		if (x >= 80) {	//jika x lebih besar sama dengan 80 maka akan menjalankan statement A
+			alert("Nilai A");	//STATEMENT A
+		} else if (x >= 70 && x < 80) {	//jika x berada diantara 70~80 maka akan menjalankan statement B
+			alert("Nilai B");	//STATEMENT B
+		} else if (x >= 60 && x < 70) {	//jika x berada diantara 60~70 maka akan menjalankan statement C
+			alert("Nilai C");	//STATEMENT C
+		} else {	//jika tidak memenuhi kondisi diatas maka akan menjalankan statement D
+			alert("Nilai D");	//STATEMENT D
+  </script>
+</html>

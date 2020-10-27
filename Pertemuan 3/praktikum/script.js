@@ -1,0 +1,1 @@
+console.log("Hello World");	// menampilkan 'Hello World' pada konsol browser atau default viewer lainnya
