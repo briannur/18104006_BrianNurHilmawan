@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery3</title>
+</head>
+<body>
+	<label for="bil1">Bil1</label>	<!--label Bil1-->
+	<input type="number" name="bil1" id="bil1"/>	<!--input untuk id bil1 bertipe number-->
+
+	<label for="bil2">Bil2</label>	<!--label Bil2-->
+	<input type="number" name="bil2" id="bil2"/>	<!--input untuk id bil2 bertipe number-->
+
+	<input type="button" value="Tambah" id="btnTambah"/>	<!--button tombol Tambah-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	<!--memuat script-->
+	<script>
+		$("#btnTambah").on("click", function () {	//listener click pada id btnTambah (button Tambah)
+			let bil1 = $("#bil1").val();		
+	        let bil2 = $("#bil2").val();	// get value dari id bil1 dan bil2
+	        let hasil = parseInt(bil1) + parseInt(bil2);	// operasi hasil bil1 dan bil2
+	        alert("Hasil : " + hasil);	//alert hasil dan value dari variabel
+    	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery 4</title>
+	<style>
+	/*mengatur kode program css*/
+    	.henshin {
+     		color: #f0f;
+    		font-size: 40px;
+      }
+    </style>
+</head>
+<body>
+	<!--paragraf teks Lorem ipsum-->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! Deserunt, inventore obcaecati perferendis modi architecto sint!</p>
+
+	<button>Berubah</button>	<!--button tombol Berubah-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	<!--<!--memuat script-->
+	<script>
+		$("button").on("click", function () {	//listener click pada tag button Berubah
+        	$("p").toggleClass("henshin");	//toggle class henshin
+    	});
+	</script>
+</body>
+</html>

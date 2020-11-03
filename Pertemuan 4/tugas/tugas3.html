@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery 3</title>
+</head>
+<body>
+	<input type="number" name="bil1" id="bil1">	<!--input untuk id bil1 bertipe number-->
+
+	<select name="" id="operator">
+		<option type="x">+</option>
+		<option type="x">-</option>
+		<option type="x">*</option>
+		<option type="x">/</option>
+	</select>		<!--dropdown operator-->
+
+	<input type="number" name="bil2" id="bil2">	<!--input untuk id bil2 bertipe number-->
+
+	<input type="button" value="Kalkulasi" id="btnTambah"/>	<!--button tombol Kalkulasi-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	<!--memuat script-->
+	<script>
+    	$("#btnTambah").on("click", function () {	//listener click pada id btnTambah (button Kalkulasi)
+            let bil1 = $("#bil1").val();
+            let bil2 = $("#bil2").val();	// get value dari id bil1 dan bil2
+
+            if (isNaN(bil1) || isNaN(bil2) || bil1 == "" || bil2 == "")	//kondisi if mengantisipasi bilangan kosong
+            	{
+    	          	alert("Masukan angka dulu");	//alert yang akan ditampilkan
+    	         	return;
+            	}
+            const operator = $("#operator").val();	//get value operator pada id operator
+            let hasil;
+			
+            switch ($("#operator").val()) {	            //kondisi switch berdasarkan operator
+            	case "+":
+                hasil = parseInt(bil1) + parseInt(bil2);
+                break;
+            	case "-":
+                hasil = parseInt(bil1) - parseInt(bil2);
+                break;
+            	case "*":
+                hasil = parseInt(bil1) * parseInt(bil2);
+                break;
+            	case "/":
+                hasil = parseInt(bil1) / parseInt(bil2);
+                break;
+            }
+            //menampilkan alert hasil dan value dari variabel hasil
+            alert("Hasil : " + hasil);
+    	});
+	</script>
+</body>
+</html>

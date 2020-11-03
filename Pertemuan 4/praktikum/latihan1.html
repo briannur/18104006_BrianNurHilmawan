@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery</title>
+</head>
+<body>
+	<h1 id="hello">Hello World</h1>	<!--tag h1 dengan id hello dan teks Hellow world-->
+
+	<p>Hello</p>	<!--paragraf teks "Hello"-->
+
+	<input type="text" name="nama" id="teks"/>	<!--tag input untuk teks-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--memuat script-->
+	<script>
+		$(document).ready(function () {	//ketika dokumen sudah dimuat
+	        $("#hello").on("click", function () {	//listener click pada id hello pada tag h1
+	        	$(this).hide();	//menyembunyikan id hello, apabila bagian id hello diklik
+        	});
+
+	        $("p").hover(function () {	//listener hover pada tag p
+	        	$(this).hide();		//menyembunyikan isi tag p apabila mouse berada diatas teks pada tag p
+	        });
+
+	        $("#teks").focus(function () {	//listener onfocus pada id teks pada tag input
+	        	$(this).css("width", "500px");	//properti css width dengan value 500px pada kolom
+	        });
+      	});
+	</script>
+</body>
+</html>
