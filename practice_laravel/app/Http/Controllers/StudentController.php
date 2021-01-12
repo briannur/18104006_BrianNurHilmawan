@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Student;
+use DataTables;
 
 class StudentController extends Controller
 {
@@ -78,4 +79,28 @@ class StudentController extends Controller
         return redirect(route('student.index'))->with('pesan','Data Berhasil dihapus!');
     }
     
+    // fungsi untuk  proses pada membaca data menggunakan DataTables
+    public function data(Request $request) {
+        if ($request->ajax()) {
+            $data = Student::all();
+            return Datatables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function($row){
+                    $btn = '
+                        <div class="text-center">
+                            <div class="btn-group">
+                                <a href="'.route('student.edit',['id' => $row->id]).'" class="edit btn btn-success btn-sm">Edit</a>
+                                <a href="'.route('student.data.destroy',['id' => $row->id]).'" class="btn btn-danger btn-sm">Hapus</a>
+                            </div>
+                        </div>
+                ';
+                return $btn;
+            })
+            ->rawColumns(['action'])
+            ->make(true);
+        }
+
+        // return menampilakn student_data
+        return view('student_data');
+    }
 }
